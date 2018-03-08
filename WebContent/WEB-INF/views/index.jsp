@@ -9,5 +9,6 @@
 <body>
 <h2> GIT 시스템 연습 중입니다.</h2>
 <small>겁나게 어렵구마잉</small>
+ui 설정 완료
 </body>
 </html>
