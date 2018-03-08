@@ -11,6 +11,6 @@
 <h2> GIT 시스템 연습 중입니다.</h2>
 <small>겁나게 어렵구마잉</small>
 <hr/>
-<a herf="account/join.do">회원가입</a>
+<a href="account/join.do">회원가입</a>
 </body>
 </html>
