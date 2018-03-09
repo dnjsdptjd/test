@@ -5,6 +5,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
 	<mvc:annotation-driven />
 	<context:component-scan base-package="mvc.controllers" />
 	<context:component-scan base-package="mvc.service" />
@@ -27,19 +28,17 @@
 		<property name="definitions" value="/WEB-INF/tiles/*-tiles.xml" />
 	</bean>
 
-	<!-- mail sender 설정 -->
-	<bean class="org.springframework.mail.javamail.JavaMailSenderImpl"
-		id="mailSender">
-		<property name="host" value="smtp.gmail.com" />
-		<property name="username" value="ncs13master@gmail.com" />
-		<property name="password" value="1q2w3e4r~" />
-		<property name="port" value="587" />
+	<!-- mailSender -->
+	<bean class="org.springframework.mail.javamail.JavaMailSenderImpl" id="mailSender">
+		<property name="host" value="smtp.gmail.com"/>
+		<property name="username" value="ncs13master@gmail.com"/>
+		<property name="password" value="1q2w3e4r~"/>
+		<property name="port" value="587"/>
 		<property name="javaMailProperties">
 			<props>
-				<prop key="mail.stmp.starttls.enable">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
 				<prop key="mail.smtp.auth">true</prop>
 			</props>
 		</property>
 	</bean>
-
 </beans>
