@@ -9,7 +9,8 @@
   
   <div class="w3-padding-32">
     <div class="w3-bar w3-border">
-      <a href="#" class="w3-bar-item w3-button">Home</a>
+      <a href="/tiles.do" class="w3-bar-item w3-button">Home</a>
+      <a href="/join.do" class="w3-bar-item w3-button w3-light-grey">Join</a>
       <a href="#" class="w3-bar-item w3-button w3-light-grey">Portfolio</a>
       <a href="#" class="w3-bar-item w3-button">Contact</a>
       <a href="#" class="w3-bar-item w3-button w3-hide-small">Food</a>
