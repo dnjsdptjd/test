@@ -17,4 +17,12 @@
 	<!-- multipart -->
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+		
+	<bean class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
+		<property name="order" value="7" />
+	</bean>
+<!-- tiles 경로 설정 -->
+	<bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions" value="/WEB-INF/tiles/*-tiles.xml" />
+	</bean>
 </beans>
